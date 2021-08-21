@@ -6,13 +6,14 @@
 #    By: ewatanab <ewatanab@student.42tokyo.jp>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/07/07 14:55:05 by ewatanab          #+#    #+#              #
-#    Updated: 2021/08/20 22:06:21 by ewatanab         ###   ########.fr        #
+#    Updated: 2021/08/21 10:45:05 by ewatanab         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = so_long
 SRCDIR = ./src/
-SRCNAMES = main.c
+SRCNAMES = main.c \
+		   so_long.c
 SRCS = $(addprefix $(SRCDIR), $(SRCNAMES))
 OBJDIR = ./obj/
 OBJS = $(SRCNAMES:%.c=$(OBJDIR)%.o)
